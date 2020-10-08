@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+	margin:0;padding:0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+	scroll-behavior: smooth;   /*important command*/
+}
+
+section{
+	padding: 100px;
+}
+
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: url(images/banner.jpg);background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between; /*i have to check its use*/
+	align-items: center;
+}
+
+.banner h2{
+	font-size: 3em;color: #fff;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.banner h3
+{
+	font-weight: 1.5em;color: #fff;font-weight: 500;
+}
+.btn{
+	position: relative;background-color: #2196f3;
+	display: inline-block;color: #fff;margin-top: 20px;
+	padding: 10px 30px;font-size: 18px;text-transform: uppercase;
+	text-decoration: none;letter-spacing: 2px;font-weight: 
+}
+
+header{
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header.sticky{
+	background-color: #fff;
+	padding:20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.sticky .logo{
+	color: #111;
+}
+
+.sticky ul li a{
+	color: #111;
+}
+
+header .logo{
+color: #fff;
+font-size: 24px;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: 700;
+letter-spacing: 10px;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	position: relative;list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	display: ;
+	margin: 0 15px;
+	color: #fff;
+	text-decoration: none;
+}
+.heading{
+	width: 100%;text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+}
+
+.heading h2{
+	font-weight: 600;font-size: 30px;
+}
+
+.content{
+	display: flex;justify-content: space-between;
+}
+
+.contentBx
+{
+	padding-right: 30px;
+}
+
+.contentBx h3
+{
+	font-size: 24px;margin-bottom: 10px;
+}
+.w50{
+	min-width: 50%;
+}
+.contentBx p{
+	font-family: 'Pacifico', cursive;font-size: 25px;
+
+}
+
+img{
+	max-width: 100%;
+}
+
+
+.services{
+	background: #111;
+}
+.heading.white{
+	color: #fff;
+}
+.services .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.serviceBx{
+	padding: 40px 20px;
+	background-color: #222;
+	color: #fff;
+	width: 340px;
+	margin:20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.serviceBx:hover{
+background: #2196f3; /*bahut pyara color hai*/
+}
+
+.serviceBx img{
+	max-width: 100px;
+	filter: invert(100%);
+}
+
+.serviceBx h2{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.work .content
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.workBx{
+	width: 50%;
+	padding: 20px;
+}
+
+.workBx img{
+	max-width: 100%;box-sizing: border-box!important;
+}
+
+.testimonial{
+	background: #f7f7f7;
+}
+.testimonial .content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.testimonialBx{
+	max-width: calc(50% - 40px);
+	padding: 60px 40px;
+	margin:20px;
+	background-color: #2196f3;
+}
+
+.testimonialBx p{
+	color: #fff;
+	font-style: italic;
+	font-size: 18px;
+	font-weight: 300;
+}
+.testimonialBx h3{
+	margin-top: 40px;
+	text-align: right;font-weight: 600;
+	font-size: 20px;
+	line-height: 1em;
+	color: white;
+}
+
+.testimonialBx span{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.contact{
+	background-color: #111;
+}
+
+.formBx{
+	min-width: 60%;
+}
+.formBx form{
+	display: flex;        /*JAB BHI REVISION KARNA HO ESS CSS COMMAND KO REVICE KARLENA */
+	flex-direction: column;
+}
+.formBx form h3,.contactInfo h3{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+form input,form textarea{
+	margin-bottom: 20px;padding: 15px;
+	font-size: 17px;
+	/*background: transparent;*/
+	border: none;
+	outline: none;
+	background: #222;
+	color: #fff;
+	resize: none;  /*used for textarea*/
+}
+
+form textarea{
+	min-height: 200px;
+}
+
+ form input::placeholder,        /*important method to change placeholder color*/
+ form textarea::placeholder{
+	color: #2196f3;
+}
+form input[type="submit"]
+{
+max-width: 100px;background-color: #2196f3;cursor: pointer;text-transform: uppercase;letter-spacing: 3px;font-weight: bold;
+}
+
+.contactInfo{
+min-width: 40%;
+}
+
+.contactInfoBx{
+	position: relative;
+}
+
+.contactInfoBx .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.icon{
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.text{
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.text h3{
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+}
+.copyright{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+/*responsive*/
+
+@media (max-width: 991px)
+{
+header{
+	padding:20px 100px;
+      }
+
+
+ .menu
+ {
+ 	position: fixed;
+ 	top: 75px;
+ 	left: -100%;
+ 	display: block;
+ 	padding: 100px 50px;
+ 	text-align: center;
+ 	width: 100%;
+ 	height: 100vh;
+ 	background-color: #fff;
+ 	transition: 0.5s;
+ 	border-top: 1px solid rgba(0,0,0,0.2);
+ }
+
+
+
+ header ul li a
+ {
+ color: black;
+ font-size: 24px;
+ margin: 10px;
+  }
+
+  /*toggle button*/
+
+  .toggle
+  {
+   width: 40px;
+   height: 40px;
+   /*background-position: center;*/
+   background-image: url(menu.png);
+   background-repeat: no-repeat;
+   cursor: pointer;
+  }
+
+  .toggle.active
+   {
+   	background: url(close.png);
+   	background-repeat: no-repeat;
+   	background-size: 30px;
+   	cursor: pointer;  	
+   }
+
+   .menu.active{
+   	left: 0;
+   }
+
+   .banner h2
+   {
+    font-size: 2.1em;
+   }
+
+   .content{
+   	display: block;
+   }
+
+   .testimonialBx{
+   	max-width: inherit;
+   }
+
+   .workBx{
+   	width: 100%;
+   }
+
+   .contactInfo {
+    padding-bottom: 60px;
+}
+}
