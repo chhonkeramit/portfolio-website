@@ -16,7 +16,7 @@ section{
 .banner{
 	position: relative;
 	min-height: 100vh;
-	background: url(images/banner.jpg);background-size: cover;
+	background: url(banner.jpg);background-size: cover;
 	background-position: right;
 	display: flex;
 	justify-content: space-between; /*i have to check its use*/
@@ -341,14 +341,14 @@ header .logo{
    width: 40px;
    height: 40px;
    /*background-position: center;*/
-   background-image: url(images/menu.png);
+   background-image: url(menu.png);
    background-repeat: no-repeat;
    cursor: pointer;
   }
 
   .toggle.active
    {
-   	background: url(images/close.png);
+   	background: url(close.png);
    	background-repeat: no-repeat;
    	background-size: 30px;
    	cursor: pointer;  	
