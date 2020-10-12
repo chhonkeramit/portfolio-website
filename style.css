@@ -47,7 +47,7 @@ header{
 	position: fixed;
 	top: 0;left: 0;
 	width: 100%;
-	padding: 30px 100px;
+	padding: 40px 100px;
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
@@ -56,7 +56,7 @@ header{
 
 header.sticky{
 	background-color: #fff;
-	padding:30px 100px;
+	padding:20px 100px;
 	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
@@ -303,17 +303,14 @@ min-width: 40%;
 @media (max-width: 991px)
 {
 header{
-	padding:40px 100px;
+	padding:20px 100px;
       }
 
-header .logo{
-   font-size: 40px;
-}
 
  .menu
- {  font-size: 50px;
+ {
  	position: fixed;
- 	top: 130px;
+ 	top: 75px;
  	left: -100%;
  	display: block;
  	padding: 100px 50px;
@@ -330,7 +327,7 @@ header .logo{
  header ul li a
  {
  color: black;
- font-size: 60px;
+ font-size: 24px;
  margin: 10px;
   }
 
@@ -360,7 +357,7 @@ header .logo{
 
    .banner h2
    {
-    font-size: 3.2em;
+    font-size: 2.1em;
    }
 
    .content{
@@ -378,6 +375,4 @@ header .logo{
    .contactInfo {
     padding-bottom: 60px;
 }
-
-
 }
