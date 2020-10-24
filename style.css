@@ -16,7 +16,7 @@ section{
 .banner{
 	position: relative;
 	min-height: 100vh;
-	background: url(images/banner.jpg);background-size: cover;
+	background: url(banner.jpg);background-size: cover;
 	background-position: center;
 	display: flex;
 	justify-content: space-between; /*i have to check its use*/
